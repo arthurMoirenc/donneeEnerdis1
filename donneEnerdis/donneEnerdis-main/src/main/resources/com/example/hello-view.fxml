@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.HelloController"
+            prefWidth="800" prefHeight="600">
+
+    <VBox spacing="20" layoutX="20" layoutY="20" prefWidth="760" prefHeight="560">
+        <TableView fx:id="tableView" prefHeight="250">
+            <columns>
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="200"/>
+                <TableColumn fx:id="valeurCol" text="Valeur" prefWidth="200"/>
+                <TableColumn fx:id="uniteCol" text="Unité" prefWidth="200"/>
+            </columns>
+        </TableView>
+
+<!--        <LineChart fx:id="lineChart" prefHeight="250" animated="false">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" label="Date"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Valeur"/>
+            </yAxis>
+        </LineChart>-->
+    </VBox>
+</AnchorPane>
